@@ -15,6 +15,10 @@
 - **AOP is like triggers in programming languages** such as Perl, .NET, Java, and others.
 - For example, **when a method is executed, you can add extra functionality before or after the method execution**.
 
+- Spring AOP can be used by majorly 2 ways given below.
+1. By **AspectJ annotation-style** (widely used approach)
+2. By **Spring XML configuration-style**
+
 ## AOP Terminologies
 | **S.No.** | **TERMS** | **DESCRIPTION** |            
 | --------- | --------- | --------------- |                               
@@ -34,3 +38,16 @@
 |     3     | after-returning | **Run advice after the a method execution only if method completes successfully**. |         
 |     4	    | after-throwing | **Run advice after the a method execution only if method exits by throwing an exception**. |    
 |     5     | around     | **Run advice before and after the advised method is invoked**. |   
+
+
+### difference between concern and cross-cutting concern in Spring AOP?
+| **concern** | **cross-cutting concern** |            
+| ----------- | ------------------------- |                                           
+| Concern is **behavior which we want to have in a module** of an application | Cross-cutting concern is a **concern which is applicable throughout the application** (or more than one module) |                           
+| Concern may be defined as a **functionality we want to implement to solve a specific business problem**. E.g. in any **eCommerce application different concerns (or modules) may be inventory management**, shipping management, user management etc. | e.g. **logging , security and data transfer are the concerns which are needed in almost every module** of an application, hence they are termed as cross-cutting concerns. |
+
+### AOP implementations?
+- Main **java based AOP implementations** are listed below :
+1. AspectJ
+2. Spring AOP
+3. JBoss AOP
